@@ -138,20 +138,20 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             directions to distanceInKm
         } catch (e: ApiException) {
             println("ApiException: ${e.message}")
-            Toast.makeText(this, "ApiException${e.message}", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "ApiException${e.message}", Toast.LENGTH_SHORT).show()
             null to null
         } catch (e: OverQueryLimitException) {
-            Toast.makeText(this, "OverQueryLimitException${e.message}", Toast.LENGTH_SHORT).show()
+           // Toast.makeText(this, "OverQueryLimitException${e.message}", Toast.LENGTH_SHORT).show()
 
             println("OverQueryLimitException: ${e.message}")
             null to null
         } catch (e: IOException) {
-            Toast.makeText(this, "IOException${e.message}", Toast.LENGTH_SHORT).show()
+           // Toast.makeText(this, "IOException${e.message}", Toast.LENGTH_SHORT).show()
 
             println("IOException: ${e.message}")
             null to null
         } catch (e: Exception) {
-            Toast.makeText(this, "Exception${e.message}", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Exception${e.message}", Toast.LENGTH_SHORT).show()
 
             println("Exception: ${e.message}")
             null to null
